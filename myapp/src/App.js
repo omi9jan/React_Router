@@ -7,6 +7,8 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Login from './Components/Login'
 import Product from './Components/Product'
+import GetTodos from './Components/GetTodos'
+import PostTodos from './Components/PostTodos'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About/>} ></Route>
         <Route path="/product/:id" element={<Product/>} ></Route>
         <Route path="/login" element={<Login/>} ></Route>
+        <Route path="/gettodos" element={<GetTodos/>} ></Route>
+        <Route path="/posttodos" element={<PostTodos/>} ></Route>
       </Routes>
     </div>
   );

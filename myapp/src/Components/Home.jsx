@@ -47,13 +47,15 @@ const Home = () => {
     }
   return (
     <div>
-        {isError && 'Something went wrong'}
         <h1>WelCome to Home Page</h1>
-        <form onClick={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             Email: <input type='email'  placeholder='email' onChange={(e)=>setEmail(e.target.value)}/>
             Password: <input type='password'  placeholder='password' onChange={(e)=>setPassword(e.target.value)}/>
             <input type='submit'/>
+            
         </form>
+        <h1>{isError? 'Something went wrong' : (<h1>Token: {token}</h1>) }
+            </h1>
     </div>
     
   )
